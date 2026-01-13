@@ -9,4 +9,8 @@ $sp: 990px;
   width: 100%;
   overflow: hidden;
   padding: 100px 0;
+
+  @include sp {
+      padding: 25px 0 75px 0;
+    }
 }

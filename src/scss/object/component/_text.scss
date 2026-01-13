@@ -1,3 +1,10 @@
+$sp: 990px;
+@mixin sp {
+  @media screen and (max-width: ($sp)) {
+    @content;
+  }
+}
+
 .c-text {
   line-height: 1.8;
 }
@@ -15,7 +22,7 @@
 }
 
 .c-text__20px {
-  font-size: 20px;
+  font-size: 3vw;
   font-weight: bold;
   color: #000;
 }
@@ -59,6 +66,10 @@
   font-size: 27px;
   font-weight: bold;
   margin: 16px;
+
+  @include sp {
+      font-size: 15px;
+    }
 }
 
 .c-text__28px {

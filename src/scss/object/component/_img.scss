@@ -10,6 +10,10 @@ $sp: 990px;
 
   &__about {
     width: 100%;
+
+    @include sp {
+        width: 80%;
+      }
     }
 
   &__animation {
