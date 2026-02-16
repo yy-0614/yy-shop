@@ -38,7 +38,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
 <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
-<link href="../assets/stylesheets/bundleacdc6130e7c41e852da4.css" rel="stylesheet"></head>
+<link href="../assets/stylesheets/bundle1efd62c3e86b32254356.css" rel="stylesheet"></head>
 
 <body>
 <div class="l-wrap">
@@ -86,7 +86,7 @@
       <div id="overlayMenu" class="p-overlay">
         <a class="p-cancel" href="#"></a>
           <ul class="p-popup c-color__hamburgers">
-            <li class="p-popupItem"><a href="#popup-sale">セール</a></li>
+            <!-- <li class="p-popupItem"><a href="#popup-sale">セール</a></li> -->
             <li class="p-popupItem"><a href="#popup-new">新着</a></li>
             <li class="p-popupItem"><a href="#popup-men">メンズ</a></li>
             <li class="p-popupItem"><a href="#popup-women">ウィメンズ</a></li>
@@ -100,7 +100,7 @@
 <nav class="p-navigation">
   <ul class="p-navigationList">
     <li class="p-navigationList__item">
-      <a href="#popup-sale" class="p-navigationList__title">セール</a>
+      <!-- <a href="#popup-sale" class="p-navigationList__title">セール</a> -->
     </li>
     <li class="p-navigationList__item">
       <a href="#popup-new" class="p-navigationList__title">新着</a>
@@ -129,7 +129,7 @@
 <div id="popup-sale" class="p-overlay">
   <a class="p-cancel" href="#"></a>
   <ul class="p-popup c-color__sale">
-    <li class="p-popupItem"><a href="/sale">セールのポップアップ内容です。</a></li>
+    <li class="p-popupItem"><a href="/sale">セール</a></li>
   </ul>
 </div>
 
@@ -319,110 +319,6 @@
   });
 </script>
 
-
-<!-- <script>
-document.addEventListener("DOMContentLoaded", () => {
-  // === ▼ ハンバーガーメニュー制御 ▼ ===
-  const hamburgers = document.querySelector('#hamburgers');
-  const overlayMenu = document.getElementById('overlayMenu');
-
-  if (hamburgers && overlayMenu) {
-    hamburgers.addEventListener('click', () => {
-      hamburgers.classList.toggle('is-active');
-      overlayMenu.classList.toggle('is-active');
-    });
-
-    overlayMenu.addEventListener('click', (e) => {
-      if (e.target === overlayMenu) {
-        hamburgers.classList.remove('is-active');
-        overlayMenu.classList.remove('is-active');
-      }
-    });
-  }
-
-  // === ▼ ヘッダー表示制御・ナビ再配置 ▼ ===
-  const header = document.querySelector(".l-header");
-  const navigation = document.querySelector(".p-navigation");
-  const logo = document.querySelector(".p-headerContents__logo");
-  const headerContents = document.querySelector(".p-headerContents");
-
-  const breakSP = 990;
-  let lastScrollY = window.scrollY;
-
-  const toggleHeaderVisibility = () => {
-    const currentScrollY = window.scrollY;
-    if (currentScrollY > lastScrollY && currentScrollY > 100) {
-      header.classList.add("hidden");
-    } else if (currentScrollY < lastScrollY) {
-      header.classList.remove("hidden");
-    }
-
-    if (window.innerWidth < breakSP) {
-      if (currentScrollY > lastScrollY) {
-        navigation.style.display = "none";
-      } else if (currentScrollY === 0) {
-        navigation.style.display = "flex";
-      }
-    }
-
-    lastScrollY = currentScrollY;
-  };
-
-  const resetNavigation = () => {
-    if (window.innerWidth >= breakSP) {
-      headerContents.insertBefore(navigation, logo.nextSibling);
-      navigation.style.display = "";
-    } else {
-      header.appendChild(navigation);
-      navigation.style.display = "flex";
-    }
-  };
-
-  window.addEventListener("scroll", toggleHeaderVisibility);
-  window.addEventListener("resize", resetNavigation);
-  resetNavigation();
-
-  // === ▼ ポップアップ制御（完全トグル式）▼ ===
-  const body = document.body;
-  const overlays = document.querySelectorAll(".p-overlay");
-  const navLinks = document.querySelectorAll('.p-navigationList__item a[href^="#popup-"]');
-
-  function closeAllOverlays() {
-    overlays.forEach(overlay => overlay.classList.remove("is-active"));
-    body.classList.remove("no-scroll");
-  }
-
-  navLinks.forEach(link => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const targetId = link.getAttribute("href").replace("#", "");
-      const targetOverlay = document.getElementById(targetId);
-
-      // 同じポップアップをもう一度押した場合は閉じる
-      if (targetOverlay.classList.contains("is-active")) {
-        closeAllOverlays();
-        return;
-      }
-
-      // 他のポップアップを閉じてから開く
-      closeAllOverlays();
-      targetOverlay.classList.add("is-active");
-      body.classList.add("no-scroll");
-    });
-  });
-
-  // 背景クリックで閉じる
-  overlays.forEach(overlay => {
-    overlay.addEventListener("click", (e) => {
-      if (e.target.classList.contains("p-cancel")) {
-        closeAllOverlays();
-      }
-    });
-  });
-
-});
-</script> -->
-
   </header>
 
 
@@ -568,6 +464,6 @@ document.addEventListener("DOMContentLoaded", () => {
 </footer>
 
 </div><!-- l-wrap -->
-<script type="text/javascript" src="../assets/javascripts/bundleacdc6130e7c41e852da4.js"></script></body>
+<script type="text/javascript" src="../assets/javascripts/bundle1efd62c3e86b32254356.js"></script></body>
 </html>
 

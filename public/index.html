@@ -41,7 +41,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
 <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
-<link href="assets/stylesheets/bundleacdc6130e7c41e852da4.css" rel="stylesheet"></head>
+<link href="assets/stylesheets/bundle1efd62c3e86b32254356.css" rel="stylesheet"></head>
 
 <body>
 <div class="l-wrap">
@@ -89,7 +89,7 @@
       <div id="overlayMenu" class="p-overlay">
         <a class="p-cancel" href="#"></a>
           <ul class="p-popup c-color__hamburgers">
-            <li class="p-popupItem"><a href="#popup-sale">セール</a></li>
+            <!-- <li class="p-popupItem"><a href="#popup-sale">セール</a></li> -->
             <li class="p-popupItem"><a href="#popup-new">新着</a></li>
             <li class="p-popupItem"><a href="#popup-men">メンズ</a></li>
             <li class="p-popupItem"><a href="#popup-women">ウィメンズ</a></li>
@@ -103,7 +103,7 @@
 <nav class="p-navigation">
   <ul class="p-navigationList">
     <li class="p-navigationList__item">
-      <a href="#popup-sale" class="p-navigationList__title">セール</a>
+      <!-- <a href="#popup-sale" class="p-navigationList__title">セール</a> -->
     </li>
     <li class="p-navigationList__item">
       <a href="#popup-new" class="p-navigationList__title">新着</a>
@@ -132,7 +132,7 @@
 <div id="popup-sale" class="p-overlay">
   <a class="p-cancel" href="#"></a>
   <ul class="p-popup c-color__sale">
-    <li class="p-popupItem"><a href="/sale">セールのポップアップ内容です。</a></li>
+    <li class="p-popupItem"><a href="/sale">セール</a></li>
   </ul>
 </div>
 
@@ -322,110 +322,6 @@
   });
 </script>
 
-
-<!-- <script>
-document.addEventListener("DOMContentLoaded", () => {
-  // === ▼ ハンバーガーメニュー制御 ▼ ===
-  const hamburgers = document.querySelector('#hamburgers');
-  const overlayMenu = document.getElementById('overlayMenu');
-
-  if (hamburgers && overlayMenu) {
-    hamburgers.addEventListener('click', () => {
-      hamburgers.classList.toggle('is-active');
-      overlayMenu.classList.toggle('is-active');
-    });
-
-    overlayMenu.addEventListener('click', (e) => {
-      if (e.target === overlayMenu) {
-        hamburgers.classList.remove('is-active');
-        overlayMenu.classList.remove('is-active');
-      }
-    });
-  }
-
-  // === ▼ ヘッダー表示制御・ナビ再配置 ▼ ===
-  const header = document.querySelector(".l-header");
-  const navigation = document.querySelector(".p-navigation");
-  const logo = document.querySelector(".p-headerContents__logo");
-  const headerContents = document.querySelector(".p-headerContents");
-
-  const breakSP = 990;
-  let lastScrollY = window.scrollY;
-
-  const toggleHeaderVisibility = () => {
-    const currentScrollY = window.scrollY;
-    if (currentScrollY > lastScrollY && currentScrollY > 100) {
-      header.classList.add("hidden");
-    } else if (currentScrollY < lastScrollY) {
-      header.classList.remove("hidden");
-    }
-
-    if (window.innerWidth < breakSP) {
-      if (currentScrollY > lastScrollY) {
-        navigation.style.display = "none";
-      } else if (currentScrollY === 0) {
-        navigation.style.display = "flex";
-      }
-    }
-
-    lastScrollY = currentScrollY;
-  };
-
-  const resetNavigation = () => {
-    if (window.innerWidth >= breakSP) {
-      headerContents.insertBefore(navigation, logo.nextSibling);
-      navigation.style.display = "";
-    } else {
-      header.appendChild(navigation);
-      navigation.style.display = "flex";
-    }
-  };
-
-  window.addEventListener("scroll", toggleHeaderVisibility);
-  window.addEventListener("resize", resetNavigation);
-  resetNavigation();
-
-  // === ▼ ポップアップ制御（完全トグル式）▼ ===
-  const body = document.body;
-  const overlays = document.querySelectorAll(".p-overlay");
-  const navLinks = document.querySelectorAll('.p-navigationList__item a[href^="#popup-"]');
-
-  function closeAllOverlays() {
-    overlays.forEach(overlay => overlay.classList.remove("is-active"));
-    body.classList.remove("no-scroll");
-  }
-
-  navLinks.forEach(link => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const targetId = link.getAttribute("href").replace("#", "");
-      const targetOverlay = document.getElementById(targetId);
-
-      // 同じポップアップをもう一度押した場合は閉じる
-      if (targetOverlay.classList.contains("is-active")) {
-        closeAllOverlays();
-        return;
-      }
-
-      // 他のポップアップを閉じてから開く
-      closeAllOverlays();
-      targetOverlay.classList.add("is-active");
-      body.classList.add("no-scroll");
-    });
-  });
-
-  // 背景クリックで閉じる
-  overlays.forEach(overlay => {
-    overlay.addEventListener("click", (e) => {
-      if (e.target.classList.contains("p-cancel")) {
-        closeAllOverlays();
-      }
-    });
-  });
-
-});
-</script> -->
-
   </header>
 
 <main class="l-main">
@@ -445,59 +341,59 @@ document.addEventListener("DOMContentLoaded", () => {
   <div class="p-scroll">
     <div class="p-scroll__men">
       <ul class="p-scrollList">
-        <li class="p-scrollList__item">
+        <!-- <li class="p-scrollList__item">
           <a href="#">
             <img src="assets/images/sele.png" alt="セール">
-            <h2 class="c-text__27px">Sale Up To 70% Off</h2>
+            <div class="c-text__25px">Sale Up To 70% Off</div>
           </a>
           <a href="#" class="c-text__16px">商品を見る</a>
-        </li>
+        </li> -->
         <li class="p-scrollList__item">
           <a href="#">
             <img src="assets/images/mshoes.jpg" alt="">
-            <h2 class="c-text__27px">シューズ&スニーカー</h2>
+            <div class="c-text__25px">シューズ&スニーカー</div>
           </a>
           <a href="#" class="c-text__16px">商品を見る</a>
         </li>
         <li class="p-scrollList__item">
           <a href="#">
             <img src="assets/images/mshirt.jpg" alt="">
-            <h2 class="c-text__27px">カジュアルシャツ</h2>
+            <div class="c-text__25px">カジュアルシャツ</div>
           </a>
           <a href="#" class="c-text__16px">商品を見る</a>
         </li>
         <li class="p-scrollList__item">
           <a href="#">
             <img src="assets/images/msweatshirt.jpg" alt="">
-            <h2 class="c-text__27px">スウェット&パーカー</h2>
+            <div class="c-text__25px">スウェット&パーカー</div>
           </a>
           <a href="#" class="c-text__16px">商品を見る</a>
         </li>
         <li class="p-scrollList__item">
           <a href="#">
             <img src="assets/images/mt-shirt.jpg" alt="">
-            <h2 class="c-text__27px">Tシャツ</h2>
+            <div class="c-text__25px">Tシャツ</div>
           </a>
           <a href="#" class="c-text__16px">商品を見る</a>
         </li>
         <li class="p-scrollList__item">
           <a href="#">
             <img src="assets/images/mshoes.jpg" alt="">
-            <h2 class="c-text__27px">シューズ</h2>
+            <div class="c-text__25px">シューズ</div>
           </a>
           <a href="#" class="c-text__16px">商品を見る</a>
         </li>
         <li class="p-scrollList__item">
           <a href="#">
             <img src="assets/images/mjewelry.jpg" alt="">
-            <h2 class="c-text__27px">ジュエリー</h2>
+            <div class="c-text__25px">ジュエリー</div>
           </a>
           <a href="#" class="c-text__16px">商品を見る</a>
         </li>
         <li class="p-scrollList__item">
           <a href="#">
             <img src="assets/images/mouter.jpg" alt="">
-            <h2 class="c-text__27px">コート&アウター</h2>
+            <div class="c-text__25px">コート&アウター</div>
           </a>
           <a href="#" class="c-text__16px">商品を見る</a>
         </li>
@@ -507,115 +403,65 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <div class="p-scroll__women">
       <ul class="p-scrollList">
-        <li class="p-scrollList__item">
+        <!-- <li class="p-scrollList__item">
           <a href="#">
             <img src="assets/images/sele.png" alt="セール">
-            <h2 class="c-text__27px">Sale Up To 70% Off</h2>
+            <div class="c-text__25px">Sale Up To 70% Off</div>
           </a>
           <a href="#" class="c-text__16px">商品を見る</a>
-        </li>
+        </li> -->
         <li class="p-scrollList__item">
           <a href="#">
             <img src="assets/images/mshoes.jpg" alt="">
-            <h2 class="c-text__27px">シューズ&スニーカー</h2>
+            <div class="c-text__25px">シューズ&スニーカー</div>
           </a>
           <a href="#" class="c-text__16px">商品を見る</a>
         </li>
         <li class="p-scrollList__item">
           <a href="#">
             <img src="assets/images/mshirt.jpg" alt="">
-            <h2 class="c-text__27px">カジュアルシャツ</h2>
+            <div class="c-text__25px">カジュアルシャツ</div>
           </a>
           <a href="#" class="c-text__16px">商品を見る</a>
         </li>
         <li class="p-scrollList__item">
           <a href="#">
             <img src="assets/images/msweatshirt.jpg" alt="">
-            <h2 class="c-text__27px">スウェット&パーカー</h2>
+            <div class="c-text__25px">スウェット&パーカー</div>
           </a>
           <a href="#" class="c-text__16px">商品を見る</a>
         </li>
         <li class="p-scrollList__item">
           <a href="#">
             <img src="assets/images/mt-shirt.jpg" alt="">
-            <h2 class="c-text__27px">Tシャツ</h2>
+            <div class="c-text__25px">Tシャツ</div>
           </a>
           <a href="#" class="c-text__16px">商品を見る</a>
         </li>
         <li class="p-scrollList__item">
           <a href="#">
             <img src="assets/images/mshoes.jpg" alt="">
-            <h2 class="c-text__27px">シューズ</h2>
+            <div class="c-text__25px">シューズ</div>
           </a>
           <a href="#" class="c-text__16px">商品を見る</a>
         </li>
         <li class="p-scrollList__item">
           <a href="#">
             <img src="assets/images/mjewelry.jpg" alt="">
-            <h2 class="c-text__27px">ジュエリー</h2>
+            <div class="c-text__25px">ジュエリー</div>
           </a>
           <a href="#" class="c-text__16px">商品を見る</a>
         </li>
         <li class="p-scrollList__item">
           <a href="#">
             <img src="assets/images/mouter.jpg" alt="">
-            <h2 class="c-text__27px">コート&アウター</h2>
+            <div class="c-text__25px">コート&アウター</div>
           </a>
           <a href="#" class="c-text__16px">商品を見る</a>
         </li>
       </ul>
     </div>
   </div>
-
-
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const menBtn = document.getElementById("m_btn");
-        const womenBtn = document.getElementById("w_btn");
-        const menList = document.querySelector(".p-scroll__men");
-        const womenList = document.querySelector(".p-scroll__women");
-
-        // 初期状態
-        menBtn.classList.add("active");
-        menList.classList.add("active");
-
-        // Slick初期化（両リスト）
-        $('.p-scroll__men .p-scrollList, .p-scroll__women .p-scrollList').slick({
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: '150px',
-          arrows: false,
-          dots: false,
-          autoplay: false,
-          responsive: [
-            { breakpoint: 990, settings: { centerPadding: false, } }
-          ]
-        });
-
-        // メンズボタンクリック
-        menBtn.addEventListener("click", function () {
-          menList.classList.add("active");
-          womenList.classList.remove("active");
-          menBtn.classList.add("active");
-          womenBtn.classList.remove("active");
-
-          $('.p-scroll__men .p-scrollList').slick('setPosition');
-        });
-
-        // ウィメンズボタンクリック
-        womenBtn.addEventListener("click", function () {
-          womenList.classList.add("active");
-          menList.classList.remove("active");
-          womenBtn.classList.add("active");
-          menBtn.classList.remove("active");
-
-          $('.p-scroll__women .p-scrollList').slick('setPosition');
-        });
-      });
-    </script>
-
 
     <div class="p-about">
       <ul class="p-aboutList">
@@ -728,6 +574,55 @@ document.addEventListener("DOMContentLoaded", () => {
         </li>
       </ul>
     </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menBtn = document.getElementById("m_btn");
+      const womenBtn = document.getElementById("w_btn");
+      const menList = document.querySelector(".p-scroll__men");
+      const womenList = document.querySelector(".p-scroll__women");
+
+      // 初期状態
+      menBtn.classList.add("active");
+      menList.classList.add("active");
+
+      // Slick初期化（両リスト）
+      $('.p-scroll__men .p-scrollList, .p-scroll__women .p-scrollList').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '150px',
+        arrows: false,
+        dots: false,
+        autoplay: false,
+        responsive: [
+          { breakpoint: 990, settings: { centerPadding: false, } }
+        ]
+      });
+
+      // メンズボタンクリック
+      menBtn.addEventListener("click", function () {
+        menList.classList.add("active");
+        womenList.classList.remove("active");
+        menBtn.classList.add("active");
+        womenBtn.classList.remove("active");
+
+        $('.p-scroll__men .p-scrollList').slick('setPosition');
+      });
+
+      // ウィメンズボタンクリック
+      womenBtn.addEventListener("click", function () {
+        womenList.classList.add("active");
+        menList.classList.remove("active");
+        womenBtn.classList.add("active");
+        menBtn.classList.remove("active");
+
+        $('.p-scroll__women .p-scrollList').slick('setPosition');
+      });
+    });
+  </script>
+
+
 </main>
 
 <footer class="l-footer">
@@ -866,6 +761,6 @@ document.addEventListener("DOMContentLoaded", () => {
 </footer>
 
 </div><!-- l-wrap -->
-<script type="text/javascript" src="assets/javascripts/bundleacdc6130e7c41e852da4.js"></script></body>
+<script type="text/javascript" src="assets/javascripts/bundle1efd62c3e86b32254356.js"></script></body>
 </html>
 

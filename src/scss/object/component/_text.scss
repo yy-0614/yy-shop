@@ -62,14 +62,10 @@ $sp: 990px;
   margin-top: 50px;
 }
 
-.c-text__27px {
-  font-size: 27px;
+.c-text__25px {
+  font-size: 25px;
   font-weight: bold;
-  margin: 16px;
-
-  @include sp {
-      font-size: 15px;
-    }
+  margin: 16px 0;
 }
 
 .c-text__28px {
